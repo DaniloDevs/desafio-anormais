@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin:  0;
-    border:  0;
+    border: 0;
      
     box-sizing: border-box;
     outline:  0;
@@ -12,6 +12,7 @@ body {
     font-family:  'Inter', sans-serif;
     display: flex;
     gap: 1rem;
+    background-color: #f3f4f6;
 }
 
 header {
@@ -71,6 +72,7 @@ nav {
 
 main {
     display: flex;
+    flex-direction: column;
     flex: 1;
     width: 65rem;
     margin: 0 auto;
@@ -90,10 +92,11 @@ article{
 }
 
 #search{
-    width: 80%;
-    height: 2rem;
+    width: 90%;
+    height: 3rem;
     padding-left: 2rem;
     border-radius: 0.75rem;
+    border: solid 1px #0E1B6B;
 }
 
 #addUser{
@@ -106,8 +109,42 @@ article{
     gap: 1rem;
     background-color: #4763E4;
     transition: 1s;
+
 }
 
 #addUser:hover{
     background-color: #3250d6;
+}
+
+table {
+    width: 90%;
+    background-color: #fff;
+    
+    margin-top:2rem ;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: start;
+    justify-self: start;
+}
+
+th {
+    text-align: start;
+    padding: 0.5rem;
+    color: #a8a29e;
+}
+td {
+    text-align: start;
+    padding: 0.5rem;
+    font-weight: 500;
+   
+}
+
+tr {
+    border-bottom: 3px solid #000;
+    
+}
+
+.action{
+    display: flex;
+    gap: 1rem;
 }
